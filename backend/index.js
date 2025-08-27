@@ -4,7 +4,7 @@ import cors from 'cors';
 import Bookrouter from './src/books/book.route.js'
 import 'dotenv/config'
 import mongoose from 'mongoose'
-const port = process.env.PORT || 5000
+const port = process.env.PORT || 5000;
 
 app.use(express.json());
 // app.use(cors({
@@ -12,7 +12,10 @@ app.use(express.json());
 //     credentials: true
 // }))
 
-app.use(cors());
+app.use(cors({
+    origin:['http://localhost:5173','https://omkar-book-store.onrender.com'],
+    credentials: true
+}));
 
 import orderRoutes from "./src/orders/order.route.js"
 import userRouter from './src/users/user.route.js';
