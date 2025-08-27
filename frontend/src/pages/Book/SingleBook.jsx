@@ -1,7 +1,7 @@
 import React from 'react'
 import { FiShoppingCart } from "react-icons/fi"
 import { useParams } from "react-router-dom"
-import getimgurl from '../../utils/getImgurl';
+import getimgurl from '../../utils/getImgurl.js';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/features/cart/cartSlice';
 import { useFetchBookByIdQuery } from '../../redux/features/Books/booksApi';
