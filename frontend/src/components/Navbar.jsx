@@ -80,7 +80,7 @@ const Navbar = () => {
                                     </div>
                                 )
                             }
-                            </> : !token ?  <div className="flex flex-col"><Link to="/dashboard" className='border-b-2 border-primary'>Dashboard</Link>
+                            </> : !token ?  <div className="flex flex-row"><Link to="/dashboard" className='border-b-2 border-primary'>Dashboard</Link>
                                             <Link to="/login"> <HiOutlineUser className="size-6" /></Link></div> : (
                                 <Link to="/login"> <HiOutlineUser className="size-6" /></Link>
                             )
