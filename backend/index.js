@@ -13,9 +13,10 @@ app.use(express.json());
 // }))
 
 app.use(cors({
-    origin:['http://localhost:5173','https://omkar-book-store.onrender.com'],
+    origin: "*",   // allow all origins
     credentials: true
 }));
+
 
 import orderRoutes from "./src/orders/order.route.js"
 import userRouter from './src/users/user.route.js';
