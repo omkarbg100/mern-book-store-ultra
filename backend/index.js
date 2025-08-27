@@ -4,7 +4,7 @@ import cors from 'cors';
 import Bookrouter from './src/books/book.route.js'
 import 'dotenv/config'
 import mongoose from 'mongoose'
-const port = 3000 || process.env.PORT
+const port = process.env.PORT || 5000
 
 app.use(express.json());
 // app.use(cors({
