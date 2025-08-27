@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiShoppingCart } from "react-icons/fi";
-import getimgurl from '../../utils/getImgurl';
+import getimgurl from '../../utils/ImgURL';
 import { Link } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { addToCart } from '../../redux/features/cart/cartSlice';
